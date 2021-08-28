@@ -1,5 +1,18 @@
-  
-("\nAddition is: ",add)
-("\nSubstraction is: ",sub)  
-("\nMultiplication is: ",mul) 
-("\nDivision is: ",div) 
+f=open("math.txt",'r',encoding='utf-8')
+x=f.readlines()
+y=x[0].split()
+
+add=0
+sub=0
+mul=0
+
+
+for i in y:
+   
+    add = add + int(i)
+    sub = sub - int(i)
+    mul = mul * int(i)
+
+print("\nAddition is: ",add)
+print("\nSubtraction is: ",sub)  
+print("\nMultiplication is: ",mul) 
